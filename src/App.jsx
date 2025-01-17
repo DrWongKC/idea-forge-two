@@ -1,8 +1,8 @@
-//import './App.css'
+import './App.css'
 import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage";
-import Profile from "./pages/Profile";
-import Blog from "./pages/Blog";
+import PokeChase from "./pages/PokeChase";
+import ChatPage from "./pages/ChatPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import {
   Route,
@@ -18,8 +18,8 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/blog" element={<Blog />}/>
+        <Route path="/pokechase" element={<PokeChase />} />
+        <Route path="/chatpage" element={<ChatPage />}/>
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     )

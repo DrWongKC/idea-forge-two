@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router";
 
-const pages = ["", "Profile", "Blog"];
+const pages = ["", "PokeChase", "ChatPage"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            Droid
+            Pokédex
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
